@@ -9,11 +9,60 @@
 
 ## Как установить
 
-Сначала нужно склонировать репозиторий и перейти в папку проекта. Затем необходимо установить зависимости командой `pip install -r requirements.txt`. После этого в корне проекта создается файл `.env`, в котором нужно указать токен VK API в формате `VK_TOKEN=ваш_токен`. Токен можно получить, создав Standalone-приложение в VK и запросив access_token с правами доступа к utils.
+Сначала нужно клонировать репозиторий и перейти в папку проекта:
+
+```python
+git clone https://github.com/Adelina2302/VK_Lesson_-1_Dunina
+cd repo
+```
+
+Далее установить зависимости:
+
+
+```python
+pip install -r requirements.txt
+```
+
+В корне проекта создаётся файл .env, в который записывается токен VK API в формате:
+
+```python
+VK_TOKEN=ваш_токен
+```
+
+Токен можно получить, создав Standalone-приложение в VK и запросив `access_token`.
 
 ## Примеры запуска
 
-Для сокращения длинной ссылки нужно выполнить команду `python main.py https://example.com`. В результате скрипт выведет сокращённую ссылку, например, `https://vk.cc/abc123`. Чтобы получить статистику по короткой ссылке, нужно выполнить команду `python main.py https://vk.cc/abc123`, и скрипт покажет общее количество переходов. Если ссылка некорректна, например, не начинается с http:// или https://, скрипт выведет сообщение об ошибке.
+Сокращение длинной ссылки:
+
+```python
+python main.py https://example.com
+```
+
+Вывод в консоль:
+
+![Output](https://github.com/Adelina2302/VK_Lesson_-1_Dunina/blob/main/images/VK_pic1.png)
+
+
+Получение статистики по короткой ссылке:
+
+```python
+python main.py https://vk.cc/abc123
+```
+
+Вывод в консоль:
+
+![Output](https://github.com/Adelina2302/VK_Lesson_-1_Dunina/blob/main/images/VK_pic2.png)
+
+Ошибка при некорректной ссылке:
+
+```python
+python main.py example.com
+```
+
+Вывод в консоль:
+
+![Output](https://github.com/Adelina2302/VK_Lesson_-1_Dunina/blob/main/images/VK_pic3.png)
 
 ## API проекта
 
